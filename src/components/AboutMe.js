@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import BucketForm from './BucketForm';
+// import BucketForm from './BucketForm';
 
-function Bucket(props) {
+function AboutMe(props) {
   const [edit, setEdit] = useState({
     id: null,
     value: '',
@@ -40,4 +40,4 @@ function Bucket(props) {
   ));
 }
 
-export default Bucket;
+export default AboutMe;

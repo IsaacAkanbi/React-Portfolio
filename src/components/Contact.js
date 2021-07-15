@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import BucketForm from './BucketForm';
-import Bucket from './Bucket';
+// import BucketForm from './BucketForm';
+// import Bucket from './Bucket';
 
-function BucketList() {
+function Contact() {
   const [bucket, setBucket] = useState([]);
 
   // Function to add a bucket list item
@@ -73,4 +73,4 @@ function BucketList() {
   );
 }
 
-export default BucketList;
+export default Contact;

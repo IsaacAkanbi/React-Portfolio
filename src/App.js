@@ -19,6 +19,10 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Resume";
 
 export default function App() {
   return (
@@ -30,10 +34,16 @@ export default function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/aboutMe">About Me</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/portfolio">Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/resume">Resume</Link>
             </li>
           </ul>
         </nav>
@@ -41,11 +51,17 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/aboutMe">
+            <AboutMe />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/resume">
+            <Resume />
           </Route>
           <Route path="/">
             <Home />
@@ -60,10 +76,18 @@ function Home() {
   return <h2>Home</h2>;
 }
 
-function About() {
-  return <h2>About</h2>;
+function AboutMe() {
+  return <h2>About Me</h2>;
 }
 
-function Users() {
-  return <h2>Users</h2>;
+function Portfolio() {
+  return <h2>Portfolio</h2>;
+}
+
+function Contact() {
+  return <h2>Contact</h2>;
+}
+
+function Resume() {
+  return <h2>Resume</h2>;
 }
