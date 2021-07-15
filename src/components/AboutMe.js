@@ -1,43 +1,19 @@
 import React, { useState } from 'react';
 // import BucketForm from './BucketForm';
 
-function AboutMe(props) {
-  const [edit, setEdit] = useState({
-    id: null,
-    value: '',
-    eagerness: '',
-  });
+import React from 'react';
 
-  console.log(props.bucket);
-
-  const submitUpdate = (value) => {
-    props.editBucketItem(edit.id, value);
-    setEdit({ id: null, value: '', eagerness: '' });
-  };
-
-  if (edit.id) {
-    return <BucketForm edit={edit} onSubmit={submitUpdate} />;
-  }
-
-  return props.bucket.map((item, i) => (
-    <div
-      className={
-        item.isComplete
-          ? `bucket-row complete ${item.eagerness}`
-          : `bucket-row ${item.eagerness}`
-      }
-      key={i}
-    >
-      <div key={item.id} onClick={() => props.completeBucketItem(item.id)}>
-        {item.text}
+const AboutMe = () => {
+  return (
+    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
+      <div className="container flex-row justify-space-between-lg justify-center align-center">
+        <h1 className="m-0">Tech Thoughts</h1>
+        <p className="m-0">Get into the mind of a programmer.</p>
       </div>
-      <div className="icons">
-        {console.log(item)}
-        <p onClick={() => setEdit({ id: item.id, value: item.text, eagerness: item.eagerness })}> ✏️</p>
-        <p onClick={() => props.removeBucketItem(item.id)}> 🗑️</p>
-      </div>
-    </div>
-  ));
-}
+    </header>
+  );
+};
+
+export default Header;
 
 export default AboutMe;
