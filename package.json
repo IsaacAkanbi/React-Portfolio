@@ -1,16 +1,19 @@
 {
+  "homepage": "https://isaacAkanbi.github.io/React-Portfolio",
   "name": "react",
   "version": "0.0.0",
   "description": "A professional page built on react technology",
   "main": "index.js",
   "dependencies": {
-    "react-router-dom": "latest",
-    "react-scripts": "2.0.0",
+    "gh-pages": "^3.2.3",
     "react": "latest",
-    "react-dom": "latest"
-  
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "react-scripts": "2.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
