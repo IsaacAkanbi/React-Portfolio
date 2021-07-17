@@ -4,33 +4,48 @@ import { validateEmail } from './utils/helpers';
 const Contact = () => {
 
   // Setup some State for the Form (and give an initial value)
-  const [contactName, setContactName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  // const [contactName, setContactName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('')
+  const [formState, setFormState] = useState('')
 
   const handleInputChange = (e) => {
 
-    const { target } = e;
+      setFormState({...formState, [e.target.name]: e.target.value});
+      console.log("onChange: ", formState);
     // const inputType = target.name;
     // const inputValue = target.value;
   }
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    
-  if (!validateEmail || !email) {
-    setErrorMessage('Email is not valid');
-  return;
-  } 
-  if (!message) {
-    setErrorMessage('please enter message');
-  return;
-  }
-  setContactName('');
-  setEmail('');
-  setMessage('');
 
+      const validEmail = validateEmail(formState.email);
+      if (!validEmail) {
+        return setErrorMessage("Email is not valid");
+      } else if (!formState.contactName.length || !formState.message.length) {
+        return setErrorMessage(`Missing required field.`);
+      } else {
+        setErrorMessage("");
+      }
+    console.log("FormSubmit", formState)
+    setFormState({
+      email: "",
+      contactName: "",
+      message: "",
+    });
+    // if (!validateEmail || !email) {
+    //   setErrorMessage("Email is not valid");
+    //   return;
+    // }
+    // if (!message) {
+    //   setErrorMessage("please enter message");
+    //   return;
+    // }
+    // setContactName("");
+    // setEmail("");
+    // setMessage("");
   };
 
   // const handleSubmit = (event) => {
@@ -76,32 +91,35 @@ const Contact = () => {
                 
                 </h6>
         <div>
-          <form>
-            <input 
-              // value={contactName}
+          <form id="contact-form" onSubmit={handleFormSubmit}>
+            <input className="row"
+              value={formState.contactName}
               type="text"
               name="contactName"
               onChange={handleInputChange } 
               placeholder="Enter your name"
               />
 
-            <input 
-              // value={email}
+            <input className='row'
+              value={formState.email}
               type="email"
               name="email"
               onChange={handleInputChange} 
               placeholder="Enter your email address"
               />
 
-            <input 
-              // value={message}
+            <input className="row py-5"
+              value={formState.message}
               type="text"
               name="message"
               onChange={handleInputChange} 
               placeholder="Enter your message"
               />
+            {errorMessage && (
+              <div>{errorMessage}</div>
+            )}
 
-            <button className="btn btn-primary" type="submit" onClick={handleFormSubmit}> Submit Message</button>
+            <button className=" btn-info row py-3" type="submit"> Submit Message</button>
           </form>
         </div>
       </div>

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: rgba(68, 6, 68, 0.384);
 }
 
 .bucket-app {
@@ -25,7 +25,7 @@ body {
 
 h1 {
   margin: 32px 0;
-  color: #fff;
+  color: rgb(49, 17, 165);
   font-size: 24px;
 }
 
@@ -35,27 +35,29 @@ h3 {
   font-size: 20px;
 }
 
+.nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
 .complete {
   text-decoration: line-through;
   opacity: 0.4;
 }
 
-.bucket-form {
+.form {
   margin-bottom: 32px;
 }
 
-.bucket-input {
+.row {
   padding: 14px 32px 14px 16px;
   border-radius: 4px;
   border: 2px solid #5d0cff;
-  outline: none;
+  /* outline: none; */
   width: 320px;
-  background: transparent;
-  color: #fff;
-}
-
-.bucket-input::placeholder {
-  color: #e2e2e2;
+  /* background: transparent; */
+  color: rgba(43, 161, 25, 0.027);
 }
 
 .bucket-button {
@@ -73,14 +75,14 @@ h3 {
   border: 2px solid #149fff;
 }
 
-.bucket-button.edit {
+/* .bucket-button.edit {
   background: linear-gradient(
     90deg,
     rgba(20, 159, 255, 1) 0%,
     rgba(17, 122, 255, 1) 100%
   );
   padding: 16px 22px;
-}
+} */
 
 .bucket-container {
   display: flex;
@@ -88,7 +90,7 @@ h3 {
   position: relative;
 }
 
-.bucket-row {
+/* .bucket-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +99,7 @@ h3 {
   padding: 16px;
   border-radius: 5px;
   width: 90%;
-}
+} */
 
 .low {
   background: linear-gradient(
@@ -129,12 +131,6 @@ h3 {
   font-size: 24px;
   cursor: pointer;
 }
-
-.delete-icon {
-  margin-right: 5px;
-  color: #fff;
-}
-
 .edit-icon {
   color: #fff;
 }
@@ -146,7 +142,7 @@ h3 {
   background-color: #ec5700;
   border-radius: 4px;
   width: 75px;
-  color: white;
+  color: rgba(5, 16, 39, 0.473);
   padding: 16px;
   margin: 10px;
   /* font-size: 16px; */
@@ -185,11 +181,13 @@ h3 {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
   display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #5d0cff;
+} */
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+  
 }
