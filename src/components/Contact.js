@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { validateEmail } from './utils/helpers';
 
 const Contact = () => {
 
@@ -18,7 +19,7 @@ const Contact = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     
-  if (!email) {
+  if (!validateEmail || !email) {
     setErrorMessage('Email is not valid');
   return;
   } 
@@ -51,28 +52,29 @@ const Contact = () => {
   return (
    
       <div className="container text-center mb-5">
-        <h4>
+        <h3>
           My Contact{' '}
+        </h3>
           <span
             className="emoji"
             role="img"
             aria-label="heart"
             aria-hidden="false"
           >
-            ❤️
+        
           </span>{' '}
-            <p class="card-text"> Email: <a href="isaac.akanbi@hotmail.co.uk">
-                    <email>isaac.akanbi@hotmail.co.uk</email>
-                </a> </p>
-            <p class="card-text"> Github: <a href="https://github.com/IsaacAkanbi">
-                    <github>https://github.com/IsaacAkanbi </github>
-                </a> </p>
-            <p class="card-text"> Linkedin: <a
+            <h6 className="card-text"> Email: <a href="isaac.akanbi@hotmail.co.uk">
+            <p>isaac.akanbi@hotmail.co.uk</p>
+                </a> </h6>
+            <h6 className="card-text"> Github: <a href="https://github.com/IsaacAkanbi">
+                    <p>https://github.com/IsaacAkanbi </p>
+                </a> </h6>
+            <h6 className="card-text"> Linkedin: <a
                     href="https://www.linkedin.com/in/isaac-o-akanbi-pmp-mba-chrl-csm-a5ab8a2b/">
-                    <linkedin>Linkedin profile</linkedin>
-                </a></p>
-        </h4>
-
+                    <p>Linkedin profile</p>
+                </a>
+                
+                </h6>
         <div>
           <form>
             <input 

@@ -4,15 +4,15 @@ const Resume = () => {
   return (
     <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <div class="card-body" id="Resume">
-          <h5 class="card-tittle">My Resume</h5>
-          <p>
+        <div className="card-body" id="Resume">
+          <h5 className="card-tittle">My Resume</h5>
+          <div>
             {" "}
             Resume:{" "}
-            <a href="./images/Isaac_Akanbi_Position_ESD.docx">
-              <resume>Resume link</resume>
+            <a href="./public/Isaac_Akanbi_Resume.docx">
+              <p>Resume link</p>
             </a>
-          </p>
+          </div>
           <p> 10 years project management experience</p>
           <p> Certified Scrum Master (CSM)</p>
           <p> Project Management Professional (PMP)</p>
