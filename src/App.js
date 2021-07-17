@@ -8,12 +8,13 @@ import {
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
-import Portfolio from "./components/Resume";
+import Resume from "./components/Resume";
 
 export default function App() {
   return (
     <Router>
       <div>
+        <div className="m-5">
         <nav>
           <ul>
             <li>
@@ -33,6 +34,8 @@ export default function App() {
             </li>
           </ul>
         </nav>
+        </div> 
+        
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -53,8 +56,13 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
+    
+        <footer>Isaac Akanbi Page</footer>
       </div>
+
     </Router>
+
+    
   );
 }
 
@@ -62,18 +70,18 @@ function Home() {
   return <h2>Home</h2>;
 }
 
-function AboutMe() {
-  return <h2>About Me</h2>;
-}
+// function AboutMe() {
+//   return <h2>About Me</h2>;
+// }
 
-function Portfolio() {
-  return <h2>Portfolio</h2>;
-}
+// function Portfolio() {
+//   return <h2>Portfolio</h2>;
+// }
 
-function Contact() {
-  return <h2>Contact</h2>;
-}
+// function Contact() {
+//   return <h2>Contact</h2>;
+// }
 
-function Resume() {
-  return <h2>Resume</h2>;
-}
+// function Resume() {
+//   return <h2>Resume</h2>;
+// }
