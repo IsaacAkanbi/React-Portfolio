@@ -63,13 +63,13 @@ const entries = [
 
 const Portfolio = () => {
   return (
-    <header className="align-center">
+    <div className="align-center">
       <h1 className="card-columns">My Portfolio</h1>
-      <card  style={{height: '40rem', width:'30rem'}} className="card-colums row w-50">
+      <span  style={{height: '40rem', width:'30rem'}} className="col-12 col-xl-6">
         
           {entries.map(entry => <PortfolioEntry href={entry.href} name={entry.name} image={entry.image} github={entry.github}/>)}  
-      </card>
-    </header>
+      </span>
+    </div>
   );
 };
 

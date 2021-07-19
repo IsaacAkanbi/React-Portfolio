@@ -58,8 +58,8 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
-    
-        <footer>Isaac Akanbi Page</footer>
+        <footer className="w-100 text-dark p-4">
+        Isaac Akanbi Page</footer>
       </div>
 
     </Router>
