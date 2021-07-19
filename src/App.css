@@ -47,20 +47,22 @@ h3 {
 }
 
 .form {
-  margin-bottom: 32px;
+  margin-bottom: 3px;
 }
 
 .row {
-  padding: 14px 32px 14px 16px;
-  border-radius: 4px;
-  border: 2px solid #5d0cff;
+  padding: 14px 12px 14px 16px;
+  border-radius: 20px;
+  border: 20px solid #5c5864;
+  /* min-height: 100px; */
+  justify-content: center;
   /* outline: none; */
-  width: 320px;
+  width: 300px;
   /* background: transparent; */
   color: rgba(43, 161, 25, 0.027);
 }
 
-.bucket-button {
+.contact-form{
   padding: 16px;
   border: none;
   border-radius: 4px;
@@ -69,10 +71,6 @@ h3 {
   background: #5d0cff;
   color: #fff;
   text-transform: capitalize;
-}
-
-.bucket-input.edit {
-  border: 2px solid #149fff;
 }
 
 /* .bucket-button.edit {
@@ -180,6 +178,10 @@ h3 {
   background-color: #ddd;
 }
 
+.card-columns {
+      column-count: 4;
+  }
+ 
 /* Show the dropdown menu on hover */
 /* .dropdown:hover .dropdown-content {
   display: block;

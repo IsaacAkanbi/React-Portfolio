@@ -6,6 +6,8 @@ const AboutMe = () => {
     <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <h1 className="m-0">About Me</h1>
+        <div><image src="../photo.jpg" alt="photo id" class="float-md-right"/>
+        </div>
         <p className="m-0">
           An IT Project Manager with over 12 years’ experience in managing
           software development, process optimization, and systems integration

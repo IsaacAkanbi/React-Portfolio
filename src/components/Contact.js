@@ -91,7 +91,7 @@ const Contact = () => {
                 
                 </h6>
         <div>
-          <form id="contact-form" onSubmit={handleFormSubmit}>
+          <form id="contact-form" className="text-center mb-5" onSubmit={handleFormSubmit}>
             <input className="row"
               value={formState.contactName}
               type="text"

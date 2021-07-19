@@ -1,57 +1,74 @@
 import React from 'react';
 
-const PortfolioEntry = ({ href, name , image }) => {
+const PortfolioEntry = ({ href, name , github, image }) => {
   return <>
-    <div 
+    <div
       style={{
         backgroundImage: `url(${image})`
         }}
     >
-      <a href={href}>{name}</a>
+     <ul>
+       <li> <a href={href}>{name}</a> </li>
+
+      <li><a href={github}> Git Repository</a> </li>
+      </ul>
     </div>
   </>;
 }
 
 const entries = [
   {
-    name: "Html Page",
-    href: "https://isaacakanbi.github.io/html_week_1/",
-    image: require("../20-react-homework-demo-01.gif")
+    name: "Code Game",
+    href: "https://isaacakanbi.github.io/code-game/",
+    image: require("../code-game.gif"),
+    github: "https://github.com/IsaacAkanbi" 
   },
   {
     name: "Sports Reel App",
-    href: "https://phil-stew.github.io/Sports-Reel/",
-    image: require("../sport-reels.PNG")
+    href: "https://isaacakanbi.github.io/Sports-Reel/",
+    image: require("../sports-reel.jpg"),
+    github: "https://github.com/IsaacAkanbi/Sports-Reel"
   },
   {
     name: "Toddler-Town App",
     href: "https://toddlertown-cu.herokuapp.com/",
-    image: require("../toddler-town.JPG")
+    image: require("../toddler-town.gif"),
+    github: "https://github.com/IsaacAkanbi/Toddler-Town"
   },
   {
     name: "Weather Dashboard App",
     href: "https://isaacakanbi.github.io/Weather_Dashboard/",
-    image: require("../weather.PNG")
+    image: require("../weather-app.gif"),
+    github: "https://github.com/IsaacAkanbi/Weather_Dashboard"
+  },
+  {
+    name: "Work Day Scheduler App",
+    href: "https://isaacakanbi.github.io/daily-planner-04/",
+    image: require("../work-day-scheduler.gif"),
+    github: "https://github.com/IsaacAkanbi/daily-planner-04"
   },
   {
     name: "Note Taker App",
     href: "https://isaacakanbi-note.herokuapp.com/",
-    image: require("../note-taker.JPG")
+    image: require("../note-taker.JPG"),
+    github: "https://github.com/IsaacAkanbi/Note-Taker"
   },
   {
     name: "Progressive Budget App",
     href: "https://nameless-spire-14609.herokuapp.com/",
-    image: require("../offline-budget.JPG")
+    image: require("../offline-budget.gif"),
+    github: "https://github.com/IsaacAkanbi/Offline-Budget-Tracker"
   }  
 ]
 
 const Portfolio = () => {
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
-      <div  className="container flex-row justify-space-between-lg justify-center align-center py-3">
-        <h1 className="m-0">My Portfolio</h1>
-          {entries.map(entry => <PortfolioEntry href={entry.href} name={entry.name} image={entry.image} className="py-3"/>)}  
-      </div>
+    <header className="align-center">
+      <h1 className="card-columns">My Portfolio</h1>
+      <card  style={{height: '40rem', width:'30rem'}} className="card-colums row w-50">
+        
+          {entries.map(entry => <PortfolioEntry href={entry.href} name={entry.name} image={entry.image} github={entry.github}/>)}  
+      </card>
     </header>
   );
 };
