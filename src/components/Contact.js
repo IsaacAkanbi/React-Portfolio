@@ -90,9 +90,9 @@ const Contact = () => {
       </div>
       <div>
         <h3>Contact Me</h3>
-        <form className="card" onSubmit={handleFormSubmit}>
+        <form className="form" onSubmit={handleFormSubmit}>
           <input
-            className="row"
+            className="form-content col"
             value={formState.contactName}
             type="text"
             name="contactName"
@@ -101,7 +101,7 @@ const Contact = () => {
           />
 
           <input
-            className="row"
+            className="form-content col"
             value={formState.email}
             type="email"
             name="email"
@@ -110,7 +110,7 @@ const Contact = () => {
           />
 
           <input
-            className="row py-5"
+            className="form-content col py-5"
             value={formState.message}
             type="text"
             name="message"
@@ -119,7 +119,7 @@ const Contact = () => {
           />
           {errorMessage && <div>{errorMessage}</div>}
 
-          <button className=" btn-info row py-3" type="submit">
+          <button className="form-content col py-3" type="submit">
             {" "}
             Submit Message
           </button>

@@ -70,7 +70,7 @@ const Portfolio = () => {
       <div class="card-body">
         <h5>My Portfolio</h5>
 
-        <div className="card-deck" >
+        <div className="card-deck w-100 col-12 d-flex" >
           {entries.map((entry) => (
             <PortfolioEntry
               href={entry.href}

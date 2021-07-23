@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,6 +16,7 @@ export default function App() {
   return (
     <Router>
       <h1 className="font-weight-bold"> Isaac O. Akanbi </h1>
+      {/* <img src={require('./images/display.jpg')} className="image"/> */}
       <div>
         <div>
         <nav className="navbar-expand-sm">
@@ -58,8 +60,8 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
-        <footer className="w-100 text-dark p-4">
-        Isaac Akanbi Page</footer>
+        <footer className="footer w-100 text-dark p-4">
+        Isaac Akanbi Page- A Technical Project Manager, PMP Certified, CSM Certified, and a Full-Stacked Developer</footer>
       </div>
 
     </Router>
@@ -71,19 +73,3 @@ export default function App() {
 function Home() {
   return <h2>Home</h2>;
 }
-
-// function AboutMe() {
-//   return <h2>About Me</h2>;
-// }
-
-// function Portfolio() {
-//   return <h2>Portfolio</h2>;
-// }
-
-// function Contact() {
-//   return <h2>Contact</h2>;
-// }
-
-// function Resume() {
-//   return <h2>Resume</h2>;
-// }

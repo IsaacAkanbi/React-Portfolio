@@ -4,10 +4,29 @@
     border: 20px solid #5c5864;
     min-height: 100px;
     justify-content: center;
-    outline: none;
+    /* outline: none; */
     width: 300px;
     /* background: transparent; */
-    color: rgba(43, 161, 25, 0.027);
+    color: rgba(17, 2, 2, 0.027);
+  }
+
+  .form{
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background: #d7d2e2;
+    color: rgba(44, 11, 11, 0);
+    text-transform: capitalize;
+  }
+
+  .form-content{
+    border-radius: 20px; 
+    width: 300px;
+    padding: 14px 12px 14px 16px;
+    border: 10px solid #5c5864;
+    
   }
 
   .card{
@@ -28,4 +47,10 @@
       list-style-type: none;
       padding: 10px;
       border: radius 20px; 
+  }
+
+  .image {
+    size: 10px;
+    max-width: 10%;
+    
   }
