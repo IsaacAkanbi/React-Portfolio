@@ -7,10 +7,10 @@
 }
 
 body {
-  background-color: rgba(68, 6, 68, 0.384);
+  background-color: rgba(6, 108, 139, 0.384);
 }
 
-.bucket-app {
+.bucket-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -35,11 +35,31 @@ h3 {
   font-size: 20px;
 }
 
-.nav {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
+.navbar{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    
 }
+
+.card-header-tabs{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #085f1e;
+  margin: 32px auto;
+  border-radius: 20px;
+  padding-bottom: 32px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+  
+}
+
 
 .complete {
   text-decoration: line-through;

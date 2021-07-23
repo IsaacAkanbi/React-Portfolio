@@ -17,8 +17,8 @@ export default function App() {
       <h1 className="font-weight-bold"> Isaac O. Akanbi </h1>
       <div>
         <div>
-        <nav className="navbar navbar-expand-lg">
-          <ul className="card-header-tabs ">
+        <nav className="navbar-expand-sm">
+          <ul className="card-header-tabs nav-tab">
             <li className="nav-item">
               <Link to="/">Home</Link>
             </li>

@@ -1,15 +1,16 @@
 import React from 'react';
+import '../style/home.css';
 
 const Resume = () => {
   return (
     
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
+      <div className="card flex-row justify-space-between-lg justify-center align-center">
         <div  id="Resume">
           <h5 className="card-tittle">My Resume</h5>
           <div>
             {" "}
             {/* Resume:{" "} */}
-            <a href="./public/Isaac_Akanbi_Resume.docx">
+            <a href="../style/Isaac_Akanbi_Resume.docx">
               <p>Download Detailed Resume</p>
             </a>
           </div>

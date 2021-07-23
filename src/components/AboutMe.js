@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-
+import '../style/home.css';
 
 const AboutMe = () => {
   return (
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <h1 className="m-0">About Me</h1>
-        <image src="../photo.jpg" alt="photo id" class="float-md-right"/>
+        <image src="./photo.jpg" alt="photo id" className="float-md-right"/>
         
-        <p className="container">
+        <p className="card">
           An IT Project Manager with over 12 years’ experience in managing
           software development, process optimization, and systems integration
           projects. He is an MBA graduate from University of Wales, United

@@ -1,17 +1,20 @@
 import React from 'react';
-
+import '../style/home.css';
 const PortfolioEntry = ({ href, name , github, image }) => {
   return <>
     <div
+      className="card"
       style={{
         backgroundImage: `url(${image})`
         }}
     >
-     <ul>
-       <li> <a href={href}>{name}</a> </li>
+      <div>
+     <ul className="list-group">
+       <li > <a href={href}>{name}</a> </li>
 
-      <li><a href={github}> Git Repository</a> </li>
+      <li ><a href={github}> Git Repository</a> </li>
       </ul>
+      </div> 
     </div>
   </>;
 }
@@ -63,14 +66,24 @@ const entries = [
 
 const Portfolio = () => {
   return (
-    <div className="align-center">
-      <h1 className="card-columns">My Portfolio</h1>
-      <span  style={{height: '40rem', width:'30rem'}} className="col-12 col-xl-6">
-        
-          {entries.map(entry => <PortfolioEntry href={entry.href} name={entry.name} image={entry.image} github={entry.github}/>)}  
-      </span>
+    <div className="card" style={{width:"sm-12"}}>
+      <div class="card-body">
+        <h5>My Portfolio</h5>
+
+        <div className="card-deck" >
+          {entries.map((entry) => (
+            <PortfolioEntry
+              href={entry.href}
+              name={entry.name}
+              image={entry.image}
+              github={entry.github}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
+// "w-100 col-12 card-deck py-4  d-flex" style={{height: '40rem', width:'30rem'}}
 export default Portfolio;

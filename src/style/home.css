@@ -1,0 +1,31 @@
+.row {
+    padding: 14px 12px 14px 16px;
+    border-radius: 20px;
+    border: 20px solid #5c5864;
+    min-height: 100px;
+    justify-content: center;
+    outline: none;
+    width: 300px;
+    /* background: transparent; */
+    color: rgba(43, 161, 25, 0.027);
+  }
+
+  .card{
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background: #675c7e;
+    color: #fff;
+    text-transform: capitalize;
+    min-height: 200px;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .list-group{
+      list-style-type: none;
+      padding: 10px;
+      border: radius 20px; 
+  }
