@@ -1,19 +1,15 @@
 import React, { useState } from 'react';
 import { validateEmail } from './utils/helpers';
 import '../style/home.css';
+
 const Contact = () => {
-  // Setup some State for the Form (and give an initial value)
-  // const [contactName, setContactName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [message, setMessage] = useState('');
+  
   const [errorMessage, setErrorMessage] = useState("");
   const [formState, setFormState] = useState("");
-
   const handleInputChange = (e) => {
     setFormState({ ...formState, [e.target.name]: e.target.value });
     console.log("onChange: ", formState);
-    // const inputType = target.name;
-    // const inputValue = target.value;
+  
   };
 
   const handleFormSubmit = (e) => {
@@ -33,35 +29,10 @@ const Contact = () => {
       contactName: "",
       message: "",
     });
-    // if (!validateEmail || !email) {
-    //   setErrorMessage("Email is not valid");
-    //   return;
-    // }
-    // if (!message) {
-    //   setErrorMessage("please enter message");
-    //   return;
-    // }
-    // setContactName("");
-    // setEmail("");
-    // setMessage("");
-  };
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-
-  //   console.log("Submitted.....")
-  // }
-  // const handleChange = (event) => {
-  //   console.log(event.target)
-  //   console.log(event.target.name, event.target.value)
-  //   // validate each user input
-  //   let name = event.target;
-  //   let email = event.target.name.email
-  //   console.log(name, email);
-
-  //  // this.setState({ [event.target.name]: event.target.value })
-  // }
-
+  }
+  
+  
   return (
     <div className="card  mb-5">
       <h3>My Contact </h3>

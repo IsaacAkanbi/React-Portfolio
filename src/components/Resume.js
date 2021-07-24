@@ -13,7 +13,7 @@ const Resume = () => {
           </a>
         </div>
         <ul>
-          <li> 10 years project management experience</li>
+          <li> 12 years project management experience</li>
           <li> Certified Scrum Master (CSM)</li>
           <li> Project Management Professional (PMP)</li>
           <li> Business Management degree</li>
