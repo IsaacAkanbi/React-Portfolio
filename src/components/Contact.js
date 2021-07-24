@@ -109,7 +109,7 @@ const Contact = () => {
             placeholder="Enter your email address"
           />
 
-          <input
+          <input required
             className="form-content col py-5"
             value={formState.message}
             type="text"
