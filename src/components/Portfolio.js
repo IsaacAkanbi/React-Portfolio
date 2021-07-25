@@ -23,43 +23,43 @@ const entries = [
   {
     name: "Code Game",
     href: "https://isaacakanbi.github.io/code-game/",
-    image: require("../code-game.gif"),
+    image: require("../images/code-game.gif"),
     github: "https://github.com/IsaacAkanbi" 
   },
   {
     name: "Sports Reel App",
     href: "https://isaacakanbi.github.io/Sports-Reel/",
-    image: require("../sports-reel.jpg"),
+    image: require("../images/sports-reel.jpg"),
     github: "https://github.com/IsaacAkanbi/Sports-Reel"
   },
   {
     name: "Toddler-Town App",
     href: "https://toddlertown-cu.herokuapp.com/",
-    image: require("../toddler-town.gif"),
+    image: require("../images/toddler-town.gif"),
     github: "https://github.com/IsaacAkanbi/Toddler-Town"
   },
   {
     name: "Weather Dashboard App",
     href: "https://isaacakanbi.github.io/Weather_Dashboard/",
-    image: require("../weather-app.gif"),
+    image: require("../images/weather-app.gif"),
     github: "https://github.com/IsaacAkanbi/Weather_Dashboard"
   },
   {
     name: "Work Day Scheduler App",
     href: "https://isaacakanbi.github.io/daily-planner-04/",
-    image: require("../work-day-scheduler.gif"),
+    image: require("../images/work-day-scheduler.gif"),
     github: "https://github.com/IsaacAkanbi/daily-planner-04"
   },
   {
     name: "Note Taker App",
     href: "https://isaacakanbi-note.herokuapp.com/",
-    image: require("../note-taker.JPG"),
+    image: require("../images/note-taker.JPG"),
     github: "https://github.com/IsaacAkanbi/Note-Taker"
   },
   {
     name: "Progressive Budget App",
     href: "https://nameless-spire-14609.herokuapp.com/",
-    image: require("../offline-budget.gif"),
+    image: require("../images/offline-budget.gif"),
     github: "https://github.com/IsaacAkanbi/Offline-Budget-Tracker"
   }  
 ]
