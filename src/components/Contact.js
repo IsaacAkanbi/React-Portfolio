@@ -54,7 +54,7 @@ const Contact = () => {
         <h6 className="card-text">
           {" "}
           Linkedin:{" "}
-          <a href="https://www.linkedin.com/in/isaac-o-akanbi-pmp-mba-chrl-csm-a5ab8a2b/">
+          <a href="https://www.linkedin.com/in/isaac-o-akanbi-pmp-mba-csm-a5ab8a2b/">
             <p>Linkedin profile</p>
           </a>
         </h6>
